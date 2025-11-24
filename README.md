@@ -12,6 +12,8 @@ View your app in AI Studio: https://ai.studio/apps/drive/1jQ9Nkz8zf1YOdWjgOqtW1D
 
 - **Render host allowlist** — Vite server and preview now allow requests from `bts-sim-analysis.onrender.com`, preventing blocked-host errors on production deployments.
   - **Usage example:** If you deploy under another Render domain, add it to `server.allowedHosts` and `preview.allowedHosts` in `vite.config.ts` so the app accepts the hostname.
+- **Vite entry script wiring** — `index.html` now loads `index.tsx`, ensuring the React dashboard mounts correctly in production/preview builds instead of rendering a blank page.
+  - **Usage example:** After `npm run build`, serve the `dist` folder (e.g., `npm start` on Render) and the dashboard renders without extra configuration because the entry module is included.
 
 ## Run Locally
 
