@@ -1,0 +1,7 @@
+{
+  "name": "SimFacilitator AI Dashboard",
+  "description": "Interactive dashboard for business simulation facilitators with real-time voice-to-voice AI assistance.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
